@@ -28,12 +28,12 @@ and open the template in the editor.
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Restaurante Web</a>
+                <a class="navbar-brand" href="#" style="color: white; font-size: 25px">Restaurante Web</a>
             </div>
 
             <h:form id="navbar" class="navbar-collapse collapse">
                 <div class="navbar-form navbar-right">
-                    <p:commandButton value="Voltar" class="btn btn-warning" action="#{mBRotas.goIndex()}" ajax="false" />
+                    <p:commandButton  value="Voltar"  class="btn btn-success" action="#{mBRotas.goIndex()}" ajax="false" />
                 </div>
 
             </h:form>
@@ -41,16 +41,17 @@ and open the template in the editor.
     </nav>
     <body>
 
-
+        
         <h:form>
+            
             <div class="col-md-8 order-md-1" style="margin-top: 50px">
-                <h4 class="mb-3">Informacoes da mesa</h4>
+                <h2 class="mb-3" style="font-family: cursive; font-weight: bolder; color: black">Informações da Mesa</h2>
                 <div class="row">
                     <div class="col-md-8 order-md-1">
                         <div class="mb-3">
-                            <label for="username">Numero da mesa</label>
+                            <label for="username">Número da Mesa:</label>
                             <div class="input-group" >
-                                <p:inputText class="form-control"  placeholder="Numero da mesa" value="#{mBMesa.mesa.nrMesa}" />
+                                <p:inputText class="form-control"  placeholder="Número da mesa" value="#{mBMesa.mesa.nrMesa}" />
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,7 @@ and open the template in the editor.
 
                 <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 
-                    <h:outputText value="Situacao da mesa: " />
+                    <h:outputText style="margin: 5px" value="Situação da Mesa:" />
                     <p:selectBooleanButton  value="#{mBMesa.mesa.aberta}" onLabel="Aberta" offLabel="Fechada" onIcon="ui-icon-check" offIcon="ui-icon-close" style="width:110px">
                         <p:ajax update="msgs" listener="#{mBMesa.addMessage()}" />
                     </p:selectBooleanButton>
@@ -78,9 +79,9 @@ and open the template in the editor.
 
 
                 <div>
-                    <p:commandButton class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBMesa.salvar()}" ajax="false" />
-                    <p:commandButton  class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBMesa.excluir()}" ajax="false" />
-                    <p:commandButton  class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBMesa.novoRegistro()}" ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBMesa.salvar()}"  ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBMesa.excluir()}" ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBMesa.novoRegistro()}" ajax="false" />
                 </div>
             </div>
         </h:form>

@@ -7,8 +7,8 @@ package controller;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.annotation.ManagedBean;
+//import javax.faces.bean.ViewScoped;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -18,7 +18,7 @@ import javax.script.ScriptException;
  * @author jeanfernandes
  */
 @ManagedBean
-@ViewScoped
+//@ViewScoped
 public class MBGeneral extends MBAbstract {
 
     private String MensagemAlerta;

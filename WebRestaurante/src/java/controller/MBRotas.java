@@ -5,15 +5,17 @@
  */
 package controller;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.annotation.ManagedBean;
+//import javax.faces.view.ViewScoped;
+
+
 
 /**
  *
  * @author jeanfernandes
  */
 @ManagedBean
-@ViewScoped
+//@ViewScoped
 public class MBRotas {
 
     public MBRotas() {

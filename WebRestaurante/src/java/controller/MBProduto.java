@@ -6,16 +6,16 @@
 package controller;
 
 import entity.Produto;
+import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+//import javax.faces.view.ViewScoped;
 
 /**
  *
  * @author jeanfernandes
  */
 @ManagedBean
-@ViewScoped
+//@ViewScoped
 public class MBProduto extends MBGeneral{
     
     private Produto produto;

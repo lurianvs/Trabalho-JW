@@ -6,15 +6,15 @@
 package controller;
 
 import entity.Usuario;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.annotation.ManagedBean;
+//import javax.faces.view.ViewScoped;
 
 /**
  *
  * @author jeanfernandes
  */
 @ManagedBean
-@ViewScoped
+//@ViewScoped
 public class MBUsuario extends MBGeneral {
     
     private Usuario user;

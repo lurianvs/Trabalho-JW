@@ -28,12 +28,12 @@ and open the template in the editor.
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Restaurante Web</a>
+                <a class="navbar-brand" href="#" style="color: white; font-size: 25px">Restaurante Web</a>
             </div>
 
             <h:form id="navbar" class="navbar-collapse collapse">
                 <div class="navbar-form navbar-right">
-                    <p:commandButton value="Voltar" class="btn btn-warning" action="#{mBRotas.goIndex()}" ajax="false" />
+                    <p:commandButton value="Voltar" class="btn btn-success" action="#{mBRotas.goIndex()}" ajax="false" />
                 </div>
 
             </h:form>
@@ -43,20 +43,19 @@ and open the template in the editor.
     <body class="bg-light">
         <div class="py-5 text-center">
             <h2>Produto</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
         </div>
 
 
 
         <h:form>
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Informacoes do produto</h4>
+                <h2 class="mb-3" style="font-family: cursive; font-weight: bolder; color: black">Informações do Produto</h2>
                 <div class="row">
                     <div class="col-md-8 order-md-1">
                         <div class="mb-3">
-                            <label for="username">Quantidade</label>
+                            <label for="username">Quantidade:</label>
                             <div class="input-group" >
-                                <p:inputText class="form-control"  placeholder="quantidade" value="#{mBProduto.produto.quantidade}" />
+                                <p:inputText class="form-control"  placeholder="Quantidade" value="#{mBProduto.produto.quantidade}" />
                             </div>
                         </div>
                     </div>
@@ -65,7 +64,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-md-8 order-md-1">
                         <div class="mb-3">
-                            <label for="username">Nome</label>
+                            <label for="username">Nome:</label>
                             <div class="input-group" >
                                 <p:inputText class="form-control"  placeholder="Nome" value="#{mBProduto.produto.nome}" />
                             </div>
@@ -75,7 +74,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-md-8 order-md-1">
                         <div class="mb-3">
-                            <label for="username">Marca</label>
+                            <label for="username">Marca:</label>
                             <div class="input-group" >
                                 <p:inputText class="form-control"  placeholder="Marca" value="#{mBProduto.produto.marca}" />
                             </div>
@@ -96,9 +95,9 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-md-8 order-md-1">
                         <div class="mb-3">
-                            <label for="username">Preco</label>
+                            <label for="username">Preço</label>
                             <div class="input-group" >
-                                <p:inputText class="form-control"  placeholder="Preco" value="#{mBProduto.produto.preco}" />
+                                <p:inputText class="form-control"  placeholder="Preço" value="#{mBProduto.produto.preco}" />
                             </div>
                         </div>
                     </div>
@@ -106,9 +105,9 @@ and open the template in the editor.
 
 
                 <div>
-                    <p:commandButton class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBProduto.salvar()}" ajax="false" />
-                    <p:commandButton class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBProduto.excluir()}" ajax="false" />
-                    <p:commandButton class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBProduto.novoRegistro()}" ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBMesa.salvar()}"  ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBMesa.excluir()}" ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBMesa.novoRegistro()}" ajax="false" />
                 </div>
             </div>
         </h:form>

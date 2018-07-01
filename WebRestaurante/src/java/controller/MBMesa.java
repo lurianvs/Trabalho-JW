@@ -7,19 +7,15 @@ package controller;
 
 import entity.Mesa;
 import java.util.List;
+import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
-import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
-import javax.faces.model.DataModel;
 
 /**
  *
  * @author jeanfernandes
  */
 @ManagedBean
-@ViewScoped
+//@ViewScoped
 public class MBMesa extends MBGeneral {
 
     private Mesa mesa;
@@ -33,7 +29,7 @@ public class MBMesa extends MBGeneral {
 
     public void addMessage() {
         String summary = this.mesa.isAberta() ? "Checked" : "Unchecked";
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(summary));
+        //FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(summary));
     }
 
     public void atualizarLista() {

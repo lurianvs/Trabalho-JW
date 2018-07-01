@@ -23,7 +23,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Restaurante Web</a>
+                    <a class="navbar-brand" href="#" style="color: white; font-size: 25px">Restaurante Web</a>
                 </div>
             </div>
         </nav>
@@ -53,19 +53,19 @@
                 </div> 
                 <!-- FIM DO MENU -->
 
-                <h1>Mesas abertas!</h1>
+                <h1 style="font-family: cursive; font-weight: bolder; text-align: center; color: black" >Mesas Abertas!</h1>
                 
 
-                <h:link outcome="welcomePrimefaces" value="Página de boas-vindas do Primefaces" />
+                
                 <h:form>
                     <p>
-                    <a class="btn btn-primary btn-lg" href="" role="button">Atualizar &raquo;</a>    
+                    <a class="btn btn-success btn-lg" href="" role="button">Atualizar &raquo;</a>    
                 </p>
                     <p:dataTable id="lista_mesas" value="#{mBMesa.mesas}" var="mesa">
-                        <p:column headerText="Situacao">
+                        <p:column headerText="Situação">
                             <h:outputText value="#{mesa.aberta}"></h:outputText>
                         </p:column>
-                        <p:column headerText="numero da mesa">
+                        <p:column headerText="Número da Mesa">
                             <h:outputText value="#{mesa.nrMesa}"></h:outputText>
                         </p:column>
                         <p:column headerText=""> 

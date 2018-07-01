@@ -28,12 +28,12 @@ and open the template in the editor.
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Restaurante Web</a>
+                <a class="navbar-brand" href="#" style="color: white; font-size: 25px">Restaurante Web</a>
             </div>
 
             <h:form id="navbar" class="navbar-collapse collapse">
                 <div class="navbar-form navbar-right">
-                    <p:commandButton value="Voltar" class="btn btn-warning" action="#{mBRotas.goIndex()}" ajax="false" />
+                    <p:commandButton value="Voltar" class="btn btn-success" action="#{mBRotas.goIndex()}" ajax="false" />
                 </div>
 
             </h:form>
@@ -45,46 +45,47 @@ and open the template in the editor.
         <h:form>
 
             <div class="col-md-8 order-md-1" style="margin-top: 50px">
-                <h4 class="mb-3">Detalhes do usuario</h4>
+                <h2 class="mb-3" style="font-family: cursive; font-weight: bolder; color: black">Detalhes do usuario</h2>
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="firstName">Nome</label>
+                        <label for="firstName">Nome:</label>
                         <div class="input-group" >
                             <p:inputText class="form-control"  placeholder="nome" value="#{mBUsuario.user.nome}" />
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="lastName">Idade</label>
+                        <label for="lastName">Idade:</label>
                         <div class="input-group" >
                             <p:inputText class="form-control"  placeholder="Idade" value="#{mBUsuario.user.idade}" />
                         </div>
                     </div>
                        <div class="col-md-6 mb-3">
-                        <label for="lastName">CPF</label>
+                        <label for="lastName">CPF:</label>
                         <div class="input-group" >
                             <p:inputText class="form-control"  placeholder="CPF" value="#{mBUsuario.user.cpf}" />
                         </div>
                     </div>
                        <div class="col-md-6 mb-3">
-                        <label for="lastName">RG</label>
+                        <label for="lastName">RG:</label>
                         <div class="input-group" >
                             <p:inputText class="form-control"  placeholder="RG" value="#{mBUsuario.user.rg}" />
                         </div>
                     </div>
                        <div class="col-md-6 mb-3">
-                        <label for="lastName">Data nascimento</label>
+                        <label for="lastName">Data de Nascimento:</label>
                         <div class="input-group" >
                             <p:inputText class="form-control"  placeholder="Nascimento" value="#{mBUsuario.user.dataNacimento}" />
                         </div>
                     </div>
                 </div>
-            </div>
+            
             <div>
-                <p:commandButton class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBMesa.salvar()}" ajax="false" />
-                <p:commandButton  class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBMesa.excluir()}" ajax="false" />
-                <p:commandButton  class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBMesa.novoRegistro()}" ajax="false" />
+                <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-primary btn-lg btn-block" value="Salvar" action="#{mBMesa.salvar()}"  ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-danger btn-lg btn-block" value="Excluir" action="#{mBMesa.excluir()}" ajax="false" />
+                    <p:commandButton style="height: 50px; width: 100px; display: inline-block; margin: 10px" class="btn btn-warning btn-lg btn-block" value="Novo" action="#{mBMesa.novoRegistro()}" ajax="false" />
             </div>
+        </div>
 
         </h:form>
     </body>
